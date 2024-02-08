@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>for Sanika , From Mayank</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e4e3e4;
+    text-align: center;
+    padding-top: 110px;
+  }
+  #container {
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    border: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Cpath d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/%3E%3C/svg%3E');;
+    padding: 0px; /* Adjust padding as needed */
+  }
+  #romantic-sentences {
+    font-size: 22px;
+    font-style: italic;
+    color: #600000; /* Hot Pink */
+    padding: 0px;
+  }
+  button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 10px;
+    border: none;
+    background-color: #ff69b4; /* Hot Pink */
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: heartbeat 0.5s infinite;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  .romantic-banner {
+    margin-left: 18%;
+    font-family: cursive;
+    width: 60%;
+    background-color: #191819; /* Hot Pink */
+    color: rgb(229, 198, 227);
+    padding: 20px 5px;
+    position: relative;
+    animation: heartbeat 2s infinite;
+    border-radius: 20px;
+}
+  .banner-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+    <div class="romantic-banner">
+        <div class="banner-text">SANIKA</div>
+      </div>
+<div id="container">
+  <div id="romantic-sentences">
+    <p style="display: none;">I adore you more than words can express.</p>
+    <p style="display: none;">You are my sunshine on a rainy day.</p>
+    <p style="display: none;">Your love fills my heart with joy.</p>
+    <p style="display: none;">You are the one I've been dreaming of.</p>
+    <p style="display: none;">Being with you feels like a fairytale come true.</p>
+    <p  style="display: none;"><a href="./propose.html"><button >Well i do have something to ask you !!!</button></a></p>
+  </div>
+</div>
+
+<script>
+  // Function to display romantic sentences one by one
+  function displaySentences() {
+    var sentences = document.getElementById('romantic-sentences').getElementsByTagName('p');
+    var index = 0;
+    sentences[index].style.display = 'block';
+    var interval = setInterval(function() {
+      index++;
+      if (index < sentences.length) {
+        sentences[index].style.display = 'block';
+      } else {
+        clearInterval(interval);
+      }
+    }, 3000); // Change the interval (in milliseconds) as desired
+  }
+
+  // Call the function to start displaying sentences
+  displaySentences();
+</script>
+</body>
+</html>
